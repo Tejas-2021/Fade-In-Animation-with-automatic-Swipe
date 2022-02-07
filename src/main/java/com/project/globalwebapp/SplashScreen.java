@@ -42,9 +42,6 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 Intent splashscreenintent = new Intent(SplashScreen.this, SecondActivity.class);
                 //splashscreenintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                splashscreenintent.putExtra("Shutdown",true);
-
-
                 startActivity(splashscreenintent);
                 overridePendingTransition(R.anim.animation_enter_activity, R.anim.animation_leave_activity);
                 finish();
